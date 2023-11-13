@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tags HTML</title>
+    <link rel="shortcut icon" href="/img/html.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="titulo">Conceitos da Tag HEAD</h1>
+
+      <div class="pt1">
+        <h2>1 - Utilidade da tag HEAD e elementos possíveis</h2>
+        <p>
+          A tag <code>&lt;head&gt;</code> é utilizada para conter informações
+          sobre o documento HTML que não são mostradas diretamente na página
+          web. Elementos comuns incluem:
+        </p>
+        <ul>
+          <li>
+            <code>&lt;title&gt;</code>: Define o título da página, mostrado na
+            aba do navegador.
+          </li>
+          <li>
+            <code>&lt;meta&gt;</code>: Fornece metadados sobre o documento HTML,
+            como codificação de caracteres e descrição da página.
+          </li>
+          <li>
+            <code>&lt;base&gt;</code>: Especifica a URL base para todos os URLs
+            relativos dentro do documento.
+          </li>
+          <li>
+            <code>&lt;link&gt;</code>: Usado para vincular folhas de estilo
+            externas e ícones de favoritos.
+          </li>
+          <li>
+            <code>&lt;script&gt;</code>: Local onde scripts como JavaScript são
+            colocados.
+          </li>
+          <li>
+            <code>&lt;style&gt;</code>: Permite a inclusão de CSS diretamente no
+            documento.
+          </li>
+        </ul>
+      </div>
+
+      <div class="pt2">
+        <h2>2 - Tags meta, title e base</h2>
+        <h3>Meta</h3>
+        <p>
+          A tag <code>&lt;meta&gt;</code> é usada para definir metadados que não
+          podem ser representados por outros elementos HTML. Por exemplo,
+          <code
+            >&lt;meta name="description" content="Descrição da página"&gt;</code
+          >
+          fornece uma breve descrição do conteúdo da página.
+        </p>
+
+        <h3>Title</h3>
+        <p>
+          A tag <code>&lt;title&gt;</code> define o título da página, que é
+          exibido na aba do navegador e nos resultados de busca. Exemplo:
+          <code>&lt;title&gt;Minha Página Web&lt;/title&gt;</code>.
+        </p>
+
+        <h3>Base</h3>
+        <p>
+          A tag <code>&lt;base&gt;</code> define a URL base para todos os
+          endereços relativos contidos em um documento. Por exemplo,
+          <code>&lt;base href="https://www.exemplo.com/"&gt;</code> fará com que
+          todos os links relativos se refiram a este endereço como sua base.
+        </p>
+      </div>
+
+      <div class="pt3">
+        <h2>3 - O que é um charset?</h2>
+        <p>
+          Charset é um conjunto de caracteres e o método de codificação
+          correspondente que permite a representação de texto em um computador.
+          Ele define quais caracteres podem ser usados e como eles são
+          representados em bytes.
+        </p>
+      </div>
+
+      <div class="pt4">
+        <h2>4 - Charset padrão não definido</h2>
+        <p>
+          Se o charset não for especificado, o navegador pode escolher um padrão
+          baseado no idioma e na localização do usuário. Normalmente, UTF-8 é
+          usado como padrão, pois suporta uma grande variedade de caracteres de
+          vários idiomas.
+        </p>
+      </div>
+
+      <div class="pt5">
+        <h2>5 - Charsets UTF-8, ASCII, ANSI e ISO-8859-1</h2>
+        <p>
+          <strong>UTF-8</strong>: Um padrão de codificação de caracteres Unicode
+          que inclui praticamente todos os caracteres de todos os idiomas
+          escritos e é compatível com a Internet.<br />
+          <strong>ASCII</strong>: Um conjunto de caracteres base dos Estados
+          Unidos que representa letras, números e símbolos de controle com 7
+          bits.<br />
+          <strong>ANSI</strong>: Um termo usado para se referir a várias
+          codificações de caracteres baseadas em Windows, que são supersets do
+          ASCII.<br />
+          <strong>ISO-8859-1</strong>: Também conhecido como Latin-1, é um
+          conjunto de caracteres para o Ocidente Europeu e é uma parte do padrão
+          Unicode.
+        </p>
+      </div>
+
+      <div class="pt6">
+        <h2>6 - Uso de símbolos e emojis em páginas web</h2>
+        <p>
+          Para usar símbolos e emojis em páginas web, você pode inseri-los
+          diretamente no seu HTML, desde que o documento esteja codificado em
+          UTF-8, que suporta uma vasta gama de caracteres. Alternativamente,
+          você pode usar entidades HTML para representar símbolos e alguns
+          emojis.
+        </p>
+
+        <h3>Exemplos:</h3>
+        <p>
+          Emoji: 😃, pode ser inserido diretamente no HTML como 😎 ou usando seu
+          código Unicode como &#128515;.
+        </p>
+        <p>
+          Símbolo de direitos autorais: © pode ser inserido diretamente como ©
+          ou usando a entidade HTML &amp;copy;.
+        </p>
+
+        <p>Exemplo de código para emoji:</p>
+        <pre><code>&lt;p&gt;Eu amo programação 😃!&lt;/p&gt;
+&lt;p&gt;Eu amo programação &amp;#128515;!&lt;/p&gt;</code></pre>
+
+        <p>Exemplo de código para símbolos usando entidades HTML:</p>
+        <pre><code>&lt;p&gt;Direitos autorais &amp;copy; 2023.&lt;/p&gt;</code></pre>
+      </div>
+    </div>
+
+    <div id="cursor"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
