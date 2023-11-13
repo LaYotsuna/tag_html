@@ -23,7 +23,7 @@ body {
   padding: 0;
   background: #f4f4f4;
   color: #343a40;
-  background-image: url(/img/código.jpg);
+  background-image: url(./img/código.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   /* cursor: none; */
